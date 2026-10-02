@@ -1,0 +1,62 @@
+  454  cd "C:\Users\vedpu\OneDrive\Documents\Classes\CS 429\CLTP"
+  455  clear
+  456  cd ~/mastery-a
+  457  ls -la
+  458  ls -la testcases
+  459  clear
+  460  cd ~/mastery-a
+  461  cat Makerfile
+  462  cat ~/Makerfile
+  463  cat Makefile 
+  464  mini_ci
+  465  clear
+  466  chmod +x mini_ci_reference
+  467  git init
+  468  git add .
+  469  git commit -m "Practice exam 1"
+  470  git branch -M main
+  471  git remote add origin git@github.com:ved-puranik/mastery-a.git
+  472  git push -u origin main
+  473  git remote add origin git@github.com:ved-puranik/mastery-a.git
+  474  git push -u origin main
+  475  cd ~
+  476  rm -rf mastery-a
+  477  clear
+  478  cd ~
+  479  echo "set history save on" > ~/.gdbinit
+  480  cat ~/.gdbinit
+  481  git clone git@github.com:ved-puranik/mastery-a.git
+  482  cd mastery-a/
+  483  ls -la
+  484  head testcases/*
+  485  ls -la
+  486  head testcases/*
+  487  ./mini_ci_reference testcases/basic_add.s
+  488  ./mini_ci_reference testcases/err_ops.s
+  489  ./mini_ci
+  490  clear
+  491  cat Makefile 
+  492  make clean
+  493  make debug
+  494  make check
+  495  ./mini_ci testcases/err_ops.s
+  496  gdb --args ./mini_ci testcases/err_ops.s
+  497  gdb --args ./mini_ci testcases/err_ops2.s
+  498  clear
+  499  nano +13 calculator.c
+  500  make debug
+  501  make check
+  502  ls -la .gdb_history 
+  503  history > logs.txt
+GDB History
+run
+bt
+info locals
+print *head
+print *head->next
+quit
+run
+bt
+print head->next
+print head->next->next
+quit
